@@ -105,25 +105,25 @@ To test the trained model with new, external data, ensure the external data is i
 
 ## 📈 Results
 
-Setelah menjalankan *notebook* `run.ipynb`, Anda akan melihat metrik evaluasi dan visualisasi kinerja model. Model ini bertujuan untuk mencapai akurasi dan F1-score yang tinggi dalam memprediksi hasil pertandingan.
+After running the `run.ipynb` notebook, you will see the evaluation metrics and visualizations of the model's performance. The model aims to achieve high accuracy and F1-score in predicting match outcomes.
 
-Contoh metrik (hasil dapat bervariasi berdasarkan data dan *tuning* model):
+Example metrics (results may vary based on data and model tuning):
 
 *   Accuracy: 0.9606
 *   Precision: 0.9533
 *   Recall: 0.9346
 *   F1-Score: 0.9439
 
-Visualisasi seperti *Confusion Matrix* dan *ROC Curve* akan dihasilkan di direktori `reports/figures/`.
+Visualizations such as the Confusion Matrix and ROC Curve will be generated in the `reports/figures/` directory.
 
 ## 🛠️ Tech Stack
 
-*   **Python**: Bahasa pemrograman utama.
-*   **Pandas**: Untuk manipulasi dan analisis data.
-*   **NumPy**: Untuk komputasi numerik.
-*   **Scikit-learn**: Untuk *machine learning* (model `RandomForestClassifier`, metrik evaluasi).
-*   **Matplotlib**: Untuk visualisasi data.
-*   **Seaborn**: Untuk visualisasi data yang lebih menarik.
+*   **Python**: The primary programming language.
+*   **Pandas**: For data manipulation and analysis.
+*   **NumPy**: For numerical computations.
+*   **Scikit-learn**: For machine learning (RandomForestClassifier model, evaluation metrics).
+*   **Matplotlib**: For data visualization.
+*   **Seaborn**: For enhanced data visualization.
 
 ## Contributing
 
