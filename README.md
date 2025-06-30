@@ -41,7 +41,7 @@ To set up the project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your_username/ScoreSeer.git
+    git clone https://github.com/daemorphics/ScoreSeer.git
     cd ScoreSeer
     ```
 
@@ -108,10 +108,10 @@ After running the `run.ipynb` notebook, you will see the evaluation metrics and 
 
 Example metrics (results may vary based on data and model tuning):
 
-*   Accuracy: [Your Accuracy Score]
-*   Precision: [Your Precision Score]
-*   Recall: [Your Recall Score]
-*   F1-Score: [Your F1-Score]
+*   Accuracy: 0.9606
+*   Precision: 0.9533
+*   Recall: 0.9346
+*   F1-Score: 0.9439
 
 Visualizations such as the Confusion Matrix and ROC Curve will be generated in the `reports/figures/` directory.
 
