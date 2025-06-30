@@ -5,7 +5,7 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](requirements.txt)
 
 ## 🌟 Overview
-ScoreSeer adalah proyek *machine learning* yang bertujuan untuk memprediksi hasil pertandingan sepak bola La Liga. Dengan memanfaatkan data historis pertandingan, termasuk statistik tim, informasi pemain, dan peristiwa pertandingan, model ini memberikan wawasan tentang potensi hasil pertandingan. Proyek ini menggunakan `RandomForestClassifier` untuk menganalisis berbagai fitur dan memprediksi apakah tim tuan rumah akan menang (target = 1) atau tidak (target = 0).
+ScoreSeer is a machine learning project aimed at predicting the outcomes of La Liga football matches. By leveraging historical match data, including team statistics, player information, and match events, this model provides insights into potential match results. This project utilizes a `RandomForestClassifier` to analyze various features and predict whether a home team will win (target = 1) or not (target = 0).
 
 ## Project Structure
 This repository follows a standard data science project structure to ensure maintainability and reproducibility:
