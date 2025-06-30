@@ -1,38 +1,39 @@
 # ScoreSeer: La Liga Match Outcome Prediction
 
-## Overview
-ScoreSeer is a machine learning project aimed at predicting the outcomes of La Liga football matches. By leveraging historical match data, including team statistics, player information, and match events, the model provides insights into potential match results. This project utilizes a RandomForestClassifier to analyze various features and predict whether a home team will win (target = 1) or not (target = 0).
+# ScoreSeer ⚽📊
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](requirements.txt)
+
+## 🌟 Overview
+ScoreSeer adalah proyek *machine learning* yang bertujuan untuk memprediksi hasil pertandingan sepak bola La Liga. Dengan memanfaatkan data historis pertandingan, termasuk statistik tim, informasi pemain, dan peristiwa pertandingan, model ini memberikan wawasan tentang potensi hasil pertandingan. Proyek ini menggunakan `RandomForestClassifier` untuk menganalisis berbagai fitur dan memprediksi apakah tim tuan rumah akan menang (target = 1) atau tidak (target = 0).
 
 ## Project Structure
 This repository follows a standard data science project structure to ensure maintainability and reproducibility:
 
 ```
 ScoreSeer/
+├── .gitignore
+├── LICENCE.txt
+├── LICENSE
+├── README.md
 ├── data/
-│   ├── external/       # Data from external sources (e.g., web scraping)
-│   ├── interim/        # Intermediate data that has been transformed
-│   ├── processed/      # The final, canonical data sets for modeling
-│   └── raw/            # The original, immutable raw data
-├── docs/
-│   └── .gitkeep        # Project documentation
+│   └── raw/
+│       └── matches_full.csv
 ├── models/
-│   └── .gitkeep        # Trained and serialized models
+│   └── random_forest_model.joblib
 ├── notebooks/
-│   └── run.ipynb       # Jupyter notebooks for experimentation and development
+│   ├── .gitkeep
+│   └── run.ipynb
+├── references/
+│   └── folder_structure.txt
 ├── reports/
-│   ├── figures/        # Generated plots and figures for reports
-│   └── .gitkeep
-├── src/
-│   ├── data/           # Scripts to download or generate data
-│   ├── features/       # Scripts to build features from raw data
-│   ├── models/         # Scripts to train models and make predictions
-│   └── visualization/  # Scripts to create visualizations
-├── .gitignore          # Specifies intentionally untracked files to ignore
-├── LICENCE.txt         # Project license
-├── LICENSE             # Project license
-├── README.md           # This README file
-├── requirements.txt    # Python dependencies
-└── folder_structure.txt # Explanation of the folder structure
+│   ├── Confusion Matrix heatmap.png
+│   └── ROC Curve.png
+├── requirements.txt
+└── src/
+    └── __init__.py
 ```
 
 ## Installation
@@ -102,18 +103,27 @@ The notebook includes code to evaluate the model's performance using standard me
 
 To test the trained model with new, external data, ensure the external data is in the same format as the training data. The notebook provides a section demonstrating how to load new data and apply the same preprocessing steps before making predictions.
 
-## Results
+## 📈 Results
 
-After running the `run.ipynb` notebook, you will see the evaluation metrics and visualizations of the model's performance. The model aims to achieve high accuracy and F1-score in predicting match outcomes.
+Setelah menjalankan *notebook* `run.ipynb`, Anda akan melihat metrik evaluasi dan visualisasi kinerja model. Model ini bertujuan untuk mencapai akurasi dan F1-score yang tinggi dalam memprediksi hasil pertandingan.
 
-Example metrics (results may vary based on data and model tuning):
+Contoh metrik (hasil dapat bervariasi berdasarkan data dan *tuning* model):
 
 *   Accuracy: 0.9606
 *   Precision: 0.9533
 *   Recall: 0.9346
 *   F1-Score: 0.9439
 
-Visualizations such as the Confusion Matrix and ROC Curve will be generated in the `reports/figures/` directory.
+Visualisasi seperti *Confusion Matrix* dan *ROC Curve* akan dihasilkan di direktori `reports/figures/`.
+
+## 🛠️ Tech Stack
+
+*   **Python**: Bahasa pemrograman utama.
+*   **Pandas**: Untuk manipulasi dan analisis data.
+*   **NumPy**: Untuk komputasi numerik.
+*   **Scikit-learn**: Untuk *machine learning* (model `RandomForestClassifier`, metrik evaluasi).
+*   **Matplotlib**: Untuk visualisasi data.
+*   **Seaborn**: Untuk visualisasi data yang lebih menarik.
 
 ## Contributing
 
