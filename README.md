@@ -1,6 +1,4 @@
-# ScoreSeer: La Liga Match Outcome Prediction
-
-# ScoreSeer ⚽📊
+# ScoreSeer: La Liga Match Outcome Prediction ⚽📊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
